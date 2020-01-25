@@ -2,7 +2,7 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=mysql;dbname=inventarisation',
+    'dsn' => 'mysql:host=mysql_acc;dbname=accounting',
     'username' => 'user',
     'password' => 'password2019',
     'charset' => 'utf8',

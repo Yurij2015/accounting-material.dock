@@ -1,6 +1,6 @@
 version: '3.7'
 services:
-  php:
+  php_acc:
     image: yiisoftware/yii2-php:7.1-apache
     volumes:
       - ~/.composer-docker/cache:/root/.composer/cache:delegated
@@ -8,23 +8,25 @@ services:
     ports:
       - '8000:80'
     depends_on:
-      - mysql
+      - mysql_acc
+    container_name: php_acc_container
 
-  mysql:
+  mysql_acc:
     image: mysql:5.7
     command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
     environment:
       - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=inventarisation
+      - MYSQL_DATABASE=accounting
       - MYSQL_USER=user
       - MYSQL_PASSWORD=password2019
     ports:
       - 33060:3306
+    container_name: mysql_acc_container
 
-  phpmyadmin:
+  phpmyadmin_acc:
     image: phpmyadmin/phpmyadmin
-    container_name: phpmyadmin_inventarisation
+    container_name: phpmyadmin_acc_container
     ports:
       - 9999:80
     links:
-      - mysql:db
+      - mysql_acc:db
