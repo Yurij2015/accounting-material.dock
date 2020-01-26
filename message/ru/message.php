@@ -49,7 +49,7 @@ return [
     'Idtransporter' => '',
     'Idvendor' => '',
     'Info' => 'Информация',
-    'Inventarisations' => 'Инвентаризация',
+    'Inventarisations' => 'Учет материалов',
     'Invnumber' => 'Инвентарный номер',
     'Material' => 'Материал',
     'Materialcategories' => 'Категории материалов',

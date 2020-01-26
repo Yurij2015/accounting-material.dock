@@ -30,7 +30,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => "WIS",
+        'brandLabel' => "УчетМатериалов",
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -41,7 +41,7 @@ AppAsset::register($this);
         'items' => [
             ['label' => 'Приемка', 'url' => ['/acceptmaterial/index']],
             ['label' => 'Сотрудники', 'url' => ['/employee/index']],
-            ['label' => 'Инвентаризация', 'url' => ['/inventarisation/index']],
+            ['label' => 'Учет', 'url' => ['/inventarisation/index']],
             ['label' => 'Материалы', 'url' => ['/material/index']],
             ['label' => 'Категории', 'url' => ['/materialcategory/index']],
             ['label' => 'Хранение', 'url' => ['/materialstorage/index']],
