@@ -1,0 +1,16 @@
+Установка composer
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-18-04
+
+Запуск composer
+php /usr/local/bin/composer
+
+Добавление пакетов, если ошбика composer install
+https://stackoverflow.com/questions/35815376/to-enable-extensions-verify-that-they-are-enabled-in-those-ini-files-vagrant
+apt-get install php7.2 libapache2-mod-php7.2 php7.2-common php7.2-gd php7.2-mysql php7.2-curl php7.2-intl php7.2-xsl php7.2-mbstring php7.2-zip php7.2-bcmath php7.2-soap php-xdebug php-imagick
+
+
+Run these command after going into the /web folder:
+sudo chgrp www-data ./assets
+and
+sudo chmod g+w ./assets/
+
